@@ -1,0 +1,260 @@
+#arjsDebugUIContainer {
+  display: none !important;
+}
+
+.btns-wrap, body {
+  font-family: Roboto, sans-serif
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #000
+}
+
+.main {
+  position: relative;
+}
+
+.a-enter-vr-button {
+  display: none !important
+}
+
+.btns-wrap, .word-tip {
+  display: block;
+  position: fixed;
+  left: 50%
+}
+
+.word-tip {
+  z-index: 9999;
+  padding: 0.5em;
+  min-width: 0;
+  max-width: 95%;
+  font-size: 1em;
+  background: rgba(0, 0, 0, .7);
+  transform: translateX(-47%);
+  bottom: 3em;
+  border-radius: 2em;
+}
+
+.title {
+  color: #fff;
+  font-size: 24px !important
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px
+}
+
+.btns-wrap {
+  bottom: 0;
+  flex-direction: row;
+  z-index: 9998;
+  max-width: 100%;
+  width: 70%;
+}
+
+.btn {
+  user-select: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 2.5em;
+  height: 2em;
+  background: #f45;
+  display: inline-block;
+  text-align: center;
+  padding: 0.4em 1em;
+  transition: all .2s
+}
+
+.rotate, .volume-up {
+  background-color: #0078ff
+}
+
+.next, .prev, .rotate, .scale, .volume-up {
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center
+}
+
+.btn:hover {
+  border: 2px solid #fff
+}
+
+.rotate {
+  background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_3d_rotation_white_24px.svg);
+  border-radius: 2em;
+  margin-right: 0.3em;
+}
+
+.prev {
+  background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_arrow_back_white_24px.svg);
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+.next {
+  background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_arrow_forward_white_24px.svg);
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+.volume-up {
+  background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_volume_up_white_24px.svg);
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px
+}
+
+.rotate_fade {
+  opacity: .4;
+  background-color: #323965
+}
+
+.scale {
+  background-color: #f02853;
+  background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_zoom_in_white_24px.svg);
+  transform: scale(1);
+  margin-left: 0
+}
+
+.custom-button, .switch {
+  background-color: #0078ff;
+  font-weight: 900;
+  font-size: 20px
+}
+
+.scale_one {
+  transform: scale(1.2);
+  background-size: 70%
+}
+
+.scale_two {
+  transform: scale(1.4);
+  background-size: 80%
+}
+
+.switch {
+  width: auto
+}
+
+.custom-button {
+  width: 50px
+}
+
+.AR-tip {
+  z-index: 9999;
+  padding: 20px;
+  min-width: 250px;
+  max-width: 400px;
+  display: block;
+  background: #fff;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 50%;
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.75;
+}
+
+.loading_animation {
+  z-index: 9999;
+  padding: 2px 2px;
+  min-width: 50px;
+  max-width: 200px;
+  display: block;
+  background: #fff;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.3;
+}
+
+.AR-tip p {
+  font-weight: 300;
+  color: #000;
+  font-size: 1em;
+  margin: 0px;
+}
+
+.AR-tip h2 {
+  color: #fff;
+  font-weight: 400
+}
+
+.gotit {
+  text-align: center;
+  width: 80px;
+  font-size: 1.2em;
+  color: #ffffff;
+  display: block;
+  margin: auto;
+}
+
+.webview {
+  text-align: center;
+  font-size: 1.2em;
+  color: #000000;
+  display: block;
+  margin: auto;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  background-color: #ffff;
+  opacity: 0.3;
+  width: auto;
+}
+
+.instructions {
+  margin: auto;
+  text-align: center;
+}
+
+.instructions a img {
+  max-width: 50%;
+  margin: 1em 0;
+}
+
+.links {
+  color: #0078ff;
+}
+
+.credits {
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  font-size: 80%;
+  background-color: #ffff;
+  opacity: 0.3;
+}
+
+#header {
+  background-color: #ffff;
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.80;
+  -khtml-opacity: 0.8;
+  opacity: 0.3;
+  /*Opacity end*/
+  color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2em;
+  padding: 0;
+  margin: 0;
+}
+
+#header #header-content {
+  margin: 0em;
+  font-size: 1.2em;
+}
